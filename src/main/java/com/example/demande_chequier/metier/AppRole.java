@@ -13,11 +13,8 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @NoArgsConstructor
 public class AppRole {
-
     @Id
     @GeneratedValue
     private Long id;
     private String roleName;
-
-
 }
