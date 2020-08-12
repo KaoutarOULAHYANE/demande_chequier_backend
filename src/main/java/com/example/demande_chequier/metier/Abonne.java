@@ -21,6 +21,7 @@ public class Abonne implements Serializable {
     private Long id;
     private String nom;
     private String prenom;
+    @Column(unique=true)
     private String username;
     private String password;
 
@@ -33,4 +34,7 @@ public class Abonne implements Serializable {
 
     @OneToMany(mappedBy = "abonne")
     private Collection<Demande> demandes;
+
+    @OneToMany(mappedBy = "abonne")
+    private Collection<AppRole> roles;
 }
