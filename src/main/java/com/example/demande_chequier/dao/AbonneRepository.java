@@ -10,4 +10,5 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 @CrossOrigin("*")
 
 public interface AbonneRepository extends JpaRepository<Abonne,Long> {
+    public Abonne findByUsername(String username);
 }
