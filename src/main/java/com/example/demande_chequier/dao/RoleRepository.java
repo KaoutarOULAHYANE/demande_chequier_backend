@@ -4,5 +4,5 @@ import com.example.demande_chequier.metier.AppRole;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface RoleRepository extends JpaRepository<AppRole,Long > {
-    public AppRole findByRoleName(String roleName);
+    public AppRole findByRoleNom(String roleNom);
 }

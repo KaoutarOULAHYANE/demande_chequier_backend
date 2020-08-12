@@ -16,5 +16,5 @@ public class AppRole {
     @Id
     @GeneratedValue
     private Long id;
-    private String roleName;
+    private String roleNom;
 }
