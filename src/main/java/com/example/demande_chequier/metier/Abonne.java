@@ -33,7 +33,4 @@ public class Abonne implements Serializable {
 
     @OneToMany(mappedBy = "abonne")
     private Collection<Demande> demandes;
-
-    @OneToMany(mappedBy = "abonne")
-    private Collection<AppRole> roles;
 }
